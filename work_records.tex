@@ -1,0 +1,56 @@
+%%
+% NCHU Bachelor Mission Statement Template
+%
+% 南昌航空大学毕业设计进度登记表 —— 使用 XeLaTeX 编译
+%
+% Copyright 2023 Arnold Chow
+%
+% The Current Maintainer of this work is Arnold Chow.
+%
+% Compile with: xelatex -> biber -> xelatex -> xelatex
+
+\documentclass[UTF8,AutoFakeBold,AutoFakeSlant,zihao=-4,oneside,openany]{ctexbook}
+\usepackage[a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+\usepackage{xeCJK}
+\usepackage{titletoc}
+\usepackage{fontspec}
+\usepackage{setspace}
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{float}
+
+% 西文字体默认为 Times New Roman
+\setromanfont{Times New Roman}
+
+% 使用根目录的字体文件替代网络上的
+\let\songti\relax
+\let\heiti\relax
+\let\kaishu\relax
+\newCJKfontfamily\songti{SimSun.ttc}[AutoFakeSlant,AutoFakeBold]
+\newCJKfontfamily\kaishu{SimKai.ttf}[AutoFakeSlant,AutoFakeBold]
+\newCJKfontfamily\heiti{SimHei.ttf}[AutoFakeSlant,AutoFakeBold]
+
+% 个人信息
+\newcommand{\majorName}{生物医学工程}
+\newcommand{\yourName}{周XX}
+\newcommand{\yourStudentID}{190841XX}
+
+\setlength{\parskip}{0em}
+%设置行距22磅
+\renewcommand{\baselinestretch}{1.53}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\input{table.tex}
+
+\end{document}
